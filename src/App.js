@@ -8,10 +8,7 @@ import {
 	Routes,
 	Route
 } from "react-router-dom";
-import About from "./components/About";
-import Ourwork from "./components/Ourwork";
-import Ourevents from "./components/Ourevents";
-import OurTeam from "./components/Ourteam";
+
 AOS.init({
 	duration: 1000,
 	easing: "ease-in-out",
@@ -25,10 +22,10 @@ function App() {
 				
 				<Routes>
 					<Route path="/" element={<Dashboard />} />
-					<Route path="/about-us" element={<About />} />
+					{/* <Route path="/about-us" element={<About />} />
 					<Route path="/our-work" element={<Ourwork />} />
 					<Route path="/our-events" element={<Ourevents />} />
-					<Route path="/our-team" element={<OurTeam />} />					
+					<Route path="/our-team" element={<OurTeam />} /> */}					
 				</Routes>
 				
 			</BrowserRouter>
