@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Dashboard=()=>{
+const Teacherdashboard=()=>{
     const [steps, setSteps] = useState(0);
     const [stdAssDetails,setStdAssDetails] = useState(false);
     const [tabname, setTabname] = useState('');
@@ -31,6 +31,24 @@ const Dashboard=()=>{
                         </li>
                         <li>
                             <a href='#'>Live Classes</a>
+                        </li>
+                        <li>
+                            <a href='#'>Discussion Forum</a>
+                        </li>
+                        <li>
+                            <a href='#'>Calendar</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>Fee Collection</a>
+                        </li>
+                        <li>
+                            <a href='#'>Documents</a>
+                        </li>
+                        <li>
+                            <a href='#'>Notices</a>
                         </li>
                     </ul>
                 </div>
@@ -114,7 +132,7 @@ const Dashboard=()=>{
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <button className="link" onClick={()=>{setStdAssDetails(true)}}>Student 1</button>
+                                                <button className="link" onClick={()=>{setStdAssDetails(true) ; setTabname('assesement');}}>Student 1</button>
                                             </td>
                                             <td>Matter</td>
                                             <td>10/9/21</td>
@@ -226,4 +244,4 @@ const Dashboard=()=>{
     )
 }
 
-export default Dashboard;
+export default Teacherdashboard;

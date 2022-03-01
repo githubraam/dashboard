@@ -1,6 +1,6 @@
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
-import Dashboard from "./components/Dashboard";
+import Teacherdashboard from "./components/Teacherdashboard";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -8,6 +8,7 @@ import {
 	Routes,
 	Route
 } from "react-router-dom";
+import Studentdashboard from "./components/Studentdashboard";
 
 AOS.init({
 	duration: 1000,
@@ -21,7 +22,9 @@ function App() {
 			<BrowserRouter>
 				
 				<Routes>
-					<Route path="/" element={<Dashboard />} />
+					<Route path="/" element={<Teacherdashboard />} />
+					
+					<Route path="/student" element={<Studentdashboard />} />
 					{/* <Route path="/about-us" element={<About />} />
 					<Route path="/our-work" element={<Ourwork />} />
 					<Route path="/our-events" element={<Ourevents />} />
